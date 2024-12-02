@@ -36,7 +36,7 @@ A web-based platform built using the Django framework, PostgreSQL database, and 
 
 1. **Clone the Repository**
    ```bash
-   git clone [https://github.com/your-repo/saffron-marketplace.git](https://github.com/mmirzaee98/Saffron-Market-.git)
+   git clone https://github.com/mmirzaee98/Saffron-Market-.git
    cd Saffron-Market-
 2. **Run project**
   in windows double click on run-project.bat or run ```doecker-compose up --build ```
