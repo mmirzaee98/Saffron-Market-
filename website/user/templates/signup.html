@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<style>
+    .card{
+        max-width: 400px;
+        margin: auto;
+    }
+</style>
+<div class="container">
+    <div class="my-5">
+        <div class="card p-3">
+            <form method="post">
+                {% csrf_token %}
+                <h2>Signup</h2>
+                <div class="mb-3">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input name="fname" type="text" class="form-control" id="fname" required>
+                </div>  
+                <div class="mb-3">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input name="lname" type="text" class="form-control" id="lname" required>
+                </div>  
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input name="password1" type="password" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword2" class="form-label">Password (again)</label>
+                    <input name="password2" type="password" class="form-control" id="exampleInputPassword2" required>
+                </div>  
+                <div class="mb-3 form-check">
+                  <a href="{% url "SignIn" %}">I have account</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>    
+        </div>
+    </div>
+</div>
+{% endblock %}
+

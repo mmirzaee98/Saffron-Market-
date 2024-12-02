@@ -1,0 +1,366 @@
+[
+    {
+        "model": "blog.blog",
+        "pk": 1,
+        "fields": {
+            "title": "The Wonders of Saffron",
+            "description": "Exploring the history, uses, and benefits of saffron.",
+            "image": "blog/saffron_wonders.webp",
+            "author": 1,
+            "content": "<p>Saffron has been cherished for centuries...</p>",
+            "view": 120,
+            "date_create": "2024-12-01",
+            "date_update": "2024-12-01",
+            "publish": true
+        }
+    },
+    {
+        "model": "blog.blog",
+        "pk": 2,
+        "fields": {
+            "title": "Saffron Recipes to Delight Your Taste Buds",
+            "description": "Learn delicious recipes that use saffron to enhance flavor.",
+            "image": "blog/saffron_recipes.webp",
+            "author": 1,
+            "content": "<p>Cooking with saffron can elevate any dish...</p>",
+            "view": 200,
+            "date_create": "2024-12-01",
+            "date_update": "2024-12-01",
+            "publish": true
+        }
+    },
+    {
+        "model": "blog.blog",
+        "pk": 3,
+        "fields": {
+            "title": "The Health Benefits of Saffron",
+            "description": "How saffron can improve your health and well-being.",
+            "image": "blog/saffron_health.webp",
+            "author": 1,
+            "content": "<p>Studies have shown that saffron contains...</p>",
+            "view": 75,
+            "date_create": "2024-12-01",
+            "date_update": "2024-12-01",
+            "publish": true
+        }
+    },
+    {
+        "model": "blog.blogcomment",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "text": "This is a fascinating article about saffron!",
+            "blog": 1,
+            "rate": 5,
+            "date": "2024-12-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "blog.blogcomment",
+        "pk": 2,
+        "fields": {
+            "user": 3,
+            "text": "I tried some recipes, and they were amazing.",
+            "blog": 2,
+            "rate": 4,
+            "date": "2024-12-01T11:00:00Z"
+        }
+    },
+    {
+        "model": "blog.blogcomment",
+        "pk": 3,
+        "fields": {
+            "user": 4,
+            "text": "Saffron truly has great health benefits. Thanks for sharing!",
+            "blog": 3,
+            "rate": 5,
+            "date": "2024-12-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "blog.blogcomment",
+        "pk": 4,
+        "fields": {
+            "user": 5,
+            "text": "Can you recommend more saffron recipes?",
+            "blog": 2,
+            "rate": 3,
+            "date": "2024-12-01T13:00:00Z"
+        }
+    },
+    {
+        "model": "blog.blogcomment",
+        "pk": 5,
+        "fields": {
+            "user": 6,
+            "text": "I love saffron for its flavor and color!",
+            "blog": 1,
+            "rate": 5,
+            "date": "2024-12-01T14:00:00Z"
+        }
+    },
+    {
+        "model": "user.profile",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$examplehashedpassword1",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "john_doe",
+            "first_name": "John",
+            "last_name": "Doe",
+            "email": "john.doe@example.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-11-01T08:00:00Z",
+            "phone": "+12345678901",
+            "address": "123 Maple Street, Springfield",
+            "national_id": "1234567890",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.profile",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$examplehashedpassword2",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "jane_smith",
+            "first_name": "Jane",
+            "last_name": "Smith",
+            "email": "jane.smith@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-11-02T10:00:00Z",
+            "phone": "+12345678902",
+            "address": "456 Oak Avenue, Metropolis",
+            "national_id": "9876543210",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.profile",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$examplehashedpassword3",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "saffron_lover",
+            "first_name": "Alex",
+            "last_name": "Green",
+            "email": "saffron.lover@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-11-03T12:00:00Z",
+            "phone": "+12345678903",
+            "address": "789 Pine Road, Smalltown",
+            "national_id": "1231231234",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.profile",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$examplehashedpassword4",
+            "last_login": null,
+            "is_superuser": true,
+            "username": "emma_brown",
+            "first_name": "Emma",
+            "last_name": "Brown",
+            "email": "emma.brown@example.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-11-04T14:00:00Z",
+            "phone": "+12345678904",
+            "address": "321 Birch Boulevard, Capital City",
+            "national_id": "4321432143",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.profile",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$examplehashedpassword5",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "mike_lee",
+            "first_name": "Mike",
+            "last_name": "Lee",
+            "email": "mike.lee@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-11-05T16:00:00Z",
+            "phone": "+12345678905",
+            "address": "654 Cedar Lane, Pleasantville",
+            "national_id": "5678567856",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.profile",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$8QLhkxLkEbFe5khj3s5JK9$5hHCWMkfzm0HMFJXWnOaxIFIigLshadykTmcXSI8g3k=",
+            "last_login": null,
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-12-02T15:00:18.553Z",
+            "phone": "",
+            "address": "",
+            "national_id": "",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 1,
+        "fields": {
+            "name": "Persian Saffron Threads",
+            "description": "Pure Persian saffron threads.",
+            "content": "<p>Grade A saffron, perfect for cooking and baking.</p>",
+            "price": 50,
+            "image": "product/1.webp",
+            "views": 120,
+            "off_percentage": 10,
+            "category": 1,
+            "creator": 1,
+            "owner": "SaffronCo",
+            "date_create": "2024-12-01",
+            "date_update": "2024-12-01"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 2,
+        "fields": {
+            "name": "Kashmiri Saffron",
+            "description": "Rare saffron from Kashmir.",
+            "content": "<p>Amazing aroma and deep color for your recipes.</p>",
+            "price": 60,
+            "image": "product/2.webp",
+            "views": 80,
+            "off_percentage": 5,
+            "category": 1,
+            "creator": 2,
+            "owner": "SaffronCraft",
+            "date_create": "2024-11-25",
+            "date_update": "2024-11-25"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 3,
+        "fields": {
+            "name": "Saffron Powder - Organic",
+            "description": "Pure saffron powder for easy use.",
+            "content": "<p>Perfect for making golden milk and desserts.</p>",
+            "price": 30,
+            "image": "product/3.webp",
+            "views": 50,
+            "off_percentage": 15,
+            "category": 2,
+            "creator": 1,
+            "owner": "OrganicCo",
+            "date_create": "2024-11-20",
+            "date_update": "2024-11-20"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 4,
+        "fields": {
+            "name": "Luxury Saffron Gift Box",
+            "description": "A beautiful gift for saffron lovers.",
+            "content": "<p>Includes saffron threads and powder in a luxury box.</p>",
+            "price": 120,
+            "image": "product/4.webp",
+            "views": 200,
+            "off_percentage": 20,
+            "category": 2,
+            "creator": 3,
+            "owner": "GiftSetsCo",
+            "date_create": "2024-12-01",
+            "date_update": "2024-12-01"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 1,
+        "fields": {
+            "name": "Premium Saffron",
+            "description": "High-quality saffron threads.",
+            "image": "category/premium_saffron.webp"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 2,
+        "fields": {
+            "name": "Saffron Gift Sets",
+            "description": "Beautiful saffron gift packages.",
+            "image": "category/saffron_gift_sets.webp"
+        }
+    },
+    {
+        "model": "shop.productcomment",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "text": "Amazing quality! Highly recommend.",
+            "rate": 5,
+            "product": 1,
+            "date": "2024-12-01T07:00:00Z"
+        }
+    },
+    {
+        "model": "shop.productcomment",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "text": "Worth every penny.",
+            "rate": 4,
+            "product": 1,
+            "date": "2024-12-02T08:30:00Z"
+        }
+    },
+    {
+        "model": "shop.invoice",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "total_price": 130,
+            "tax": 10,
+            "status": true,
+            "date_create": "2024-12-01",
+            "description": "Purchased Persian Saffron and Gift Set.",
+            "send_date": "2024-12-02T11:30:00Z"
+        }
+    },
+    {
+        "model": "shop.invoice",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "total_price": 60,
+            "tax": 5,
+            "status": false,
+            "date_create": "2024-11-30",
+            "description": "Ordered Kashmiri Saffron.",
+            "send_date": "2024-12-01T05:30:00Z"
+        }
+    }
+]

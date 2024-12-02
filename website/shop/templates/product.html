@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <img src="{{product.image.url}}" alt="{{product.name}}" class="w-100">
+        </div>
+        <div class="col-md-6 col-12">
+            <h1>{{product.name}}</h1>
+            {{product.content|safe}}
+            <p>price: {{product.price}}$</p>
+            <button onclick="addToCart('{{product.name}}', {{product.price}})" class="btn btn-primary">Add to cart</button>
+        </div>
+    </div>
+{% endblock %}
+
